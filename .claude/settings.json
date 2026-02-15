@@ -1,0 +1,13 @@
+{
+    "extraKnownMarketplaces": {
+        "withzombies": {
+            "source": {
+                "source": "github",
+                "repo": "withzombies/hyperpowers"
+            }
+        }
+    },
+    "enabledPlugins": {
+        "hyperpowers@withzombies": true
+    }
+}
