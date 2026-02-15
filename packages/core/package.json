@@ -1,0 +1,16 @@
+{
+  "name": "@ndaze/core",
+  "version": "0.1.0",
+  "type": "module",
+  "main": "src/index.ts",
+  "types": "src/index.ts",
+  "scripts": {
+    "test": "bun test",
+    "typecheck": "bun x tsc --noEmit"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "bun-types": "^1.3.0",
+    "typescript": "^5.7.0"
+  }
+}

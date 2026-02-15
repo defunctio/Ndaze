@@ -1,0 +1,47 @@
+{
+  "lockfileVersion": 1,
+  "configVersion": 1,
+  "workspaces": {
+    "": {
+      "name": "ndaze",
+    },
+    "packages/cli": {
+      "name": "@ndaze/cli",
+      "version": "0.1.0",
+      "bin": {
+        "ndaze": "src/index.ts",
+      },
+      "dependencies": {
+        "@ndaze/core": "workspace:*",
+        "commander": "^13.0.0",
+      },
+      "devDependencies": {
+        "bun-types": "^1.3.0",
+        "typescript": "^5.7.0",
+      },
+    },
+    "packages/core": {
+      "name": "@ndaze/core",
+      "version": "0.1.0",
+      "devDependencies": {
+        "bun-types": "^1.3.0",
+        "typescript": "^5.7.0",
+      },
+    },
+  },
+  "packages": {
+    "@ndaze/cli": ["@ndaze/cli@workspace:packages/cli"],
+
+    "@ndaze/core": ["@ndaze/core@workspace:packages/core"],
+
+    "@types/node": ["@types/node@25.2.3", "", { "dependencies": { "undici-types": "~7.16.0" } }, "sha512-m0jEgYlYz+mDJZ2+F4v8D1AyQb+QzsNqRuI7xg1VQX/KlKS0qT9r1Mo16yo5F/MtifXFgaofIFsdFMox2SxIbQ=="],
+
+    "bun-types": ["bun-types@1.3.9", "", { "dependencies": { "@types/node": "*" } }, "sha512-+UBWWOakIP4Tswh0Bt0QD0alpTY8cb5hvgiYeWCMet9YukHbzuruIEeXC2D7nMJPB12kbh8C7XJykSexEqGKJg=="],
+
+    "commander": ["commander@13.1.0", "", {}, "sha512-/rFeCpNJQbhSZjGVwO9RFV3xPqbnERS8MmIQzCtD/zl6gpJuV/bMLuN92oG3F7d8oDEHHRrujSXNUr8fpjntKw=="],
+
+    "typescript": ["typescript@5.9.3", "", { "bin": { "tsc": "bin/tsc", "tsserver": "bin/tsserver" } }, "sha512-jl1vZzPDinLr9eUt3J/t7V6FgNEw9QjvBPdysz9KfQDD41fQrC2Y4vKQdiaUpFT4bXlb1RHhLpp8wtm6M5TgSw=="],
+
+    "undici-types": ["undici-types@7.16.0", "", {}, "sha512-Zz+aZWSj8LE6zoxD+xrjh4VfkIG8Ya6LvYkZqtUQGJPZjYl53ypCaUwWqo7eI0x66KBGeRo+mlBEkMSeSZ38Nw=="],
+  }
+}
