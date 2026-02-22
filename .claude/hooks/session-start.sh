@@ -18,5 +18,5 @@ fi
 # not just referenced in settings.json.
 if command -v claude &>/dev/null; then
   claude plugin marketplace add withzombies/hyperpowers 2>/dev/null || true
-  claude plugin install hyperpowers@withzombies --scope project 2>/dev/null || true
+  claude plugin install withzombies-hyper --scope project 2>/dev/null || true
 fi
