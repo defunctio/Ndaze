@@ -8,6 +8,8 @@ fi
 
 cd "$CLAUDE_PROJECT_DIR"
 
+# ── 1. Install project dependencies ──
+bun install
 
 # ── 2. Install hyperpowers plugin ──
 # Add the marketplace and install the plugin so it's actually downloaded,
