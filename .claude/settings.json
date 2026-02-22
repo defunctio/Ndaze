@@ -8,7 +8,7 @@
         }
     },
     "enabledPlugins": {
-        "hyperpowers@withzombies": true
+        "withzombies-hyper@withzombies-hyper": true    
     },
     "hooks": {
         "SessionStart": [
